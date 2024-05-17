@@ -47,7 +47,7 @@ rm(limites_edad)
 rm(poblacion_por_rango2012)
 rm(Caracteristicas_y_composicion_del_hogar_2012)
 
-#Ahora vamos a organizar los motivos de movilidad ajustados a nuestro nueva categorización
+#Ahora vamos a organizar los motivos de movilidad ajustados a nuestra nueva categorización
 
 Data_Base2012$P5739 <- recode(Data_Base2012$P5739,
                               `1` = 1,
@@ -134,7 +134,7 @@ rm(limites_edad)
 rm(poblacion_por_rango2014)
 rm(Caracteristicas_y_composicion_del_hogar_2014)
 
-#Ahora vamos a organizar los motivos de movilidad ajustados a nuestro nueva categorización
+#Ahora vamos a organizar los motivos de movilidad ajustados a nuestra nueva categorización
 
 Data_Base2014$P6096 <- recode(Data_Base2014$P6096,
                               `1` = 1,
@@ -221,7 +221,7 @@ rm(limites_edad)
 rm(poblacion_por_rango2016)
 rm(Caracteristicas_y_composicion_del_hogar_2016)
 
-#Ahora vamos a organizar los motivos de movilidad ajustados a nuestro nueva categorización
+#Ahora vamos a organizar los motivos de movilidad ajustados a nuestra nueva categorización
 
 Data_Base2016$P6096 <- recode(Data_Base2016$P6096,
                               `1` = 1,
@@ -308,7 +308,7 @@ rm(limites_edad)
 rm(poblacion_por_rango2018)
 rm(Caracteristicas_y_composicion_del_hogar_2018)
 
-#Ahora vamos a organizar los motivos de movilidad ajustados a nuestro nueva categorización
+#Ahora vamos a organizar los motivos de movilidad ajustados a nuestra nueva categorización
 
 Data_Base2018$P6096 <- recode(Data_Base2018$P6096,
                               `1` = 1,
@@ -395,7 +395,7 @@ rm(limites_edad)
 rm(poblacion_por_rango2020)
 rm(Caracteristicas_y_composicion_del_hogar_2020)
 
-# Ahora vamos a organizar los motivos de movilidad ajustados a nuestro nueva categorización
+# Ahora vamos a organizar los motivos de movilidad ajustados a nuestra nueva categorización
 
 Data_Base2020$P6096 <- recode(Data_Base2020$P6096,
                               `1` = 1,
@@ -485,7 +485,7 @@ rm(limites_edad)
 rm(poblacion_por_rango2022)
 rm(Caracteristicas_y_composicion_del_hogar_2022)
 
-# Ahora vamos a organizar los motivos de movilidad ajustados a nuestro nueva categorización
+# Ahora vamos a organizar los motivos de movilidad ajustados a nuestra nueva categorización
 
 Data_Base2022$P1662 <- recode(Data_Base2022$P1662,
                               `1` = 1,
