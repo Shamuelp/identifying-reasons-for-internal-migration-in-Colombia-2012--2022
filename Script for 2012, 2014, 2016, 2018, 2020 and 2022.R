@@ -9,7 +9,7 @@
 
 #Traemos los datos SPSS
 library(haven)
-Caracteristicas_y_composicion_del_hogar_2012 <- read_sav("R WorkSpace/Base de datos L&M/Caracteristicas y composicion del hogar 2012.sav")
+Caracteristicas_y_composicion_del_hogar_2012 <- read_sav("file.sav")
 View(Caracteristicas_y_composicion_del_hogar_2012)
 
 #Seleccionamos solo las variables que necesitamos
@@ -96,7 +96,7 @@ rm(total_por_edad)
 
 #Traemos los datos SPSS
 library(haven)
-Caracteristicas_y_composicion_del_hogar_2014 <- read_sav("R WorkSpace/Base de datos L&M/Caracteristicas y composicion del hogar 2014.sav")
+Caracteristicas_y_composicion_del_hogar_2014 <- read_sav("file.sav")
 View(Caracteristicas_y_composicion_del_hogar_2014)
 
 #Seleccionamos solo las variables que necesitamos
@@ -183,7 +183,7 @@ rm(total_por_edad)
   
 #Traemos los datos SPSS
 library(haven)
-Caracteristicas_y_composicion_del_hogar_2016 <- read_sav("R WorkSpace/Base de datos L&M/Caracteristicas y composicion del hogar 2016.sav")
+Caracteristicas_y_composicion_del_hogar_2016 <- read_sav("file.sav")
 View(Caracteristicas_y_composicion_del_hogar_2016)
 
 #Seleccionamos solo las variables que necesitamos
@@ -270,7 +270,7 @@ rm(total_por_edad)
   
 #Traemos los datos SPSS
 library(haven)
-Caracteristicas_y_composicion_del_hogar_2018 <- read_sav("R WorkSpace/Base de datos L&M/Caracteristicas y composicion del hogar 2018.sav")
+Caracteristicas_y_composicion_del_hogar_2018 <- read_sav("file.sav")
 View(Caracteristicas_y_composicion_del_hogar_2018)
 
 #Seleccionamos solo las variables que necesitamos
@@ -357,7 +357,7 @@ rm(total_por_edad)
   
 # Traemos los datos SPSS
 library(haven)
-Caracteristicas_y_composicion_del_hogar_2020 <- read_sav("R WorkSpace/Base de datos L&M/Caracteristicas y composicion del hogar 2020.sav")
+Caracteristicas_y_composicion_del_hogar_2020 <- read_sav("file.sav")
 View(Caracteristicas_y_composicion_del_hogar_2020)
 
 # Seleccionamos solo las variables que necesitamos
@@ -447,7 +447,7 @@ rm(total_por_edad)
 
 # Traemos los datos SPSS
 library(haven)
-Caracteristicas_y_composicion_del_hogar_2022 <- read_sav("R WorkSpace/Base de datos L&M/Caracteristicas y composicion del hogar 2022.sav")
+Caracteristicas_y_composicion_del_hogar_2022 <- read_sav("file.sav")
 View(Caracteristicas_y_composicion_del_hogar_2022)
 
 # Seleccionamos solo las variables que necesitamos
@@ -531,10 +531,10 @@ if (!requireNamespace("openxlsx", quietly = TRUE)) {
 library(openxlsx)
 
 #Ejecutando las siguientes lineas se descargan los datos en formato de excel
-write.xlsx(Data_2012, file = "R WorkSpace/Base de datos L&M/Data_2012.xlsx", rowNames = FALSE)
-write.xlsx(Data_2014, file = "R WorkSpace/Base de datos L&M/Data_2014.xlsx", rowNames = FALSE)
-write.xlsx(Data_2016, file = "R WorkSpace/Base de datos L&M/Data_2016.xlsx", rowNames = FALSE)
-write.xlsx(Data_2018, file = "R WorkSpace/Base de datos L&M/Data_2018.xlsx", rowNames = FALSE)
-write.xlsx(Data_2020, file = "R WorkSpace/Base de datos L&M/Data_2020.xlsx", rowNames = FALSE)
-write.xlsx(Data_2022, file = "R WorkSpace/Base de datos L&M/Data_2022.xlsx", rowNames = FALSE)
+write.xlsx(Data_2012, file = "path.xlsx", rowNames = FALSE)
+write.xlsx(Data_2014, file = "path.xlsx", rowNames = FALSE)
+write.xlsx(Data_2016, file = "path.xlsx", rowNames = FALSE)
+write.xlsx(Data_2018, file = "path.xlsx", rowNames = FALSE)
+write.xlsx(Data_2020, file = "path.xlsx", rowNames = FALSE)
+write.xlsx(Data_2022, file = "path.xlsx", rowNames = FALSE)
 
