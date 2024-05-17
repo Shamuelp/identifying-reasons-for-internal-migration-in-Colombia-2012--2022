@@ -1,7 +1,7 @@
 # identifying-reasons-for-internal-migration-in-Colombia-2012--2022
 Through basic data management, tables are created that allow observing the behavior of internal migration in Colombia, segregated by age in an interval of "&lt;20", "20 - 30", "30 - 40", "40 - 50", "50 - 60", "60 - 70", ">70" years, using data from DANE (National Administrative Department of Statistics). The exercise has been carried out in the R programming language.
 
-The data can be found on the DANE portal at the following link: https://microdatos.dane.gov.co/index.php/catalog/central/about
+The database for 2022 is quite heavy and I cannot attach it, but you can easily find it in the microdata. The data can be found on the DANE portal at the following link: https://microdatos.dane.gov.co/index.php/catalog/central/about
 
 Although the quality of life survey used for the exercise has changed over the years, I have built a classification form that allows the variable that contains the reasons to be reorganized so that we can contrast the data over the years without major problems.
 
