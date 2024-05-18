@@ -33,47 +33,6 @@ ggplot(data, aes(x = factor(P5739), y = percentage)) +
     y = "Porcentaje"
   ) +
   theme_minimal()
-#Mostrar todos los años juntos----
-
-# Seleccionamos las columnas necesarias y las renombramos para que sean consistentes
-Data_2012_sub <- Data_2012[, c("rango_edad", "P5739", "count")]
-colnames(Data_2012_sub) <- c("rango_edad", "Var", "count")
-
-Data_2014_sub <- Data_2014[, c("rango_edad", "P6096", "count")]
-colnames(Data_2014_sub) <- c("rango_edad", "Var", "count")
-
-Data_2016_sub <- Data_2016[, c("rango_edad", "P6096", "count")]
-colnames(Data_2016_sub) <- c("rango_edad", "Var", "count")
-
-Data_2018_sub <- Data_2018[, c("rango_edad", "P6096", "count")]
-colnames(Data_2018_sub) <- c("rango_edad", "Var", "count")
-
-Data_2020_sub <- Data_2020[, c("rango_edad", "P6096", "count")]
-colnames(Data_2020_sub) <- c("rango_edad", "Var", "count")
-
-Data_2022_sub <- Data_2022[, c("rango_edad", "P1662", "count")]
-colnames(Data_2022_sub) <- c("rango_edad", "Var", "count")
-
-# Unimos todos los dataframes en uno solo
-combined_data <- rbind(Data_2012_sub, Data_2014_sub, Data_2016_sub, Data_2018_sub, Data_2020_sub, Data_2022_sub)
-
-# Sumamos la columna count agrupando por rango_edad y Var
-final_data <- aggregate(count ~ rango_edad + Var, data = combined_data, FUN = sum)
-
-# Renombramos la columna 'count' a 'sum'
-colnames(final_data)[colnames(final_data) == "count"] <- "sum"
-
-grupo_peso <- final_data %>%
-  group_by(rango_edad, Var) %>%
-  summarise(Peso_Total = sum(sum, na.rm = TRUE)) %>%
-  ungroup()
-
-# Calcula la proporción ponderada dentro de cada rango de edad
-grupo_peso <- grupo_peso %>%
-  group_by(rango_edad) %>%
-  mutate((Proporcion_Ponderada = Peso_Total / sum(Peso_Total, na.rm = TRUE))*100) %>%
-  ungroup()
-colnames(grupo_peso)[colnames(grupo_peso) == "*..."] <- "porcentaje"
 
 #Plot General 10 años----
 
